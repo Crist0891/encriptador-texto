@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+:root {
+  --color-texto: #f6f6f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif,'Times New Roman', Times, serif;
+  background: url(../assets/fondo-body-2.jpg);
+  background-size: 100% 100%;
+  color: var(--color-texto);
+}
+
+/* Estilizando el header */
+.header {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.header-logo {
+  /* border: 1px solid red; */
+  width: 2rem;
+}
+
+.logo {
+  width: 100%;
+  filter: invert(100%);
+}
+
+.title {
+  color: var(--color-texto);
+  font-weight:600;
+  font-size: 2rem;
+  text-shadow: 20px 10px 7px #000000;
+}
+
+
+
+
+
+
+/* Estilizando el body */
+
+.main {
+  /* border: 1px solid red; */
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+}
+
+/* estilo textarea 1 encriptación*/
+.main-textarea {
+  /* border: 1px solid red; */
+  width: 90%;
+  height: 100%;
+}
+
+.main-tx-encriptar, 
+.main-textarea-resultado  {
+
+  display: flex;
+  resize: none;
+  width: 80%;
+  height: 50%;
+  color: var(--color-texto);
+  font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  background: transparent;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #f6f6f6;
+  font-size: 2rem;
+}
+
+.main-tx-encriptar:focus, 
+.main-textarea-resultado:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px;
+}
+
+textarea::placeholder {
+  color: var(--color-texto);
+  padding: 10px 0 0 10px;
+  font-size: 1.5rem;
+  opacity: .6;
+}
+
+.main-textarea-resultado::placeholder {
+  color: #000000;
+  font-size: 3rem;
+  padding: 25px 20px;
+  }
+
+
+/* estilizando botones */
+.main-tx-btn {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto' sans-serif, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  color: var(--color-texto);
+  text-transform: uppercase;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background: #bdb3b140;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  box-shadow: .1px .1px 6px 2px;
+}
+
+.copiar {
+  background: #bdb3b1b0;
+  color: #000000c0;
+}
+
+
+
+
+/* Estiñizando el footer */
+.footer{
+  /* display: flex; */
+  justify-content: center;
+  /* border: 1px solid red; */
+  background-color: #87d29430;
+}
+
+
+.content-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 2rem;
+}
+
+.titulo-footer {
+  font-family: 'Roboto' sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.redes-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  filter: sepia(100%) hue-rotate(4deg) saturate(900%) invert(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.redes-footer-link:hover {
+  width: 50px;
+}
+
+/* media querys */
+
+@media (max-width: 720px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-textarea {
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    height: 50%;
+  }
+
+  .main-tx-encriptar, 
+  .main-textarea-resultado {
+    font-size: 1rem;
+  }
+
+  textarea::placeholder{
+    font-size: 1rem;
+    color: #d8c0c7;
+    background-color: #000000c0;
+  }
+
+  .main-textarea-resultado::placeholder {
+    color: var(--color-texto);
+    font-size: 2rem;
+    padding: 10px 50px;
+    }
+
+    .content-footer {
+      padding: 0 25px;
+    }
+}
