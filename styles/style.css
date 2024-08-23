@@ -28,6 +28,7 @@ body {
   justify-content: center;
   gap: 2rem;
   padding: 1rem 0 1rem 0;
+  width: 100%;
 }
 
 .header-logo {
@@ -38,6 +39,7 @@ body {
 .logo {
   width: 100%;
   filter: invert(100%);
+  
 }
 
 .title {
@@ -56,20 +58,19 @@ body {
 
 .main {
   /* border: 1px solid red; */
-  width: 100vw;
   height: 80vh;
   display: flex;
 }
 
 /* estilo textarea 1 encriptación*/
 .main-textarea {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 90%;
   height: 100%;
 }
 
 .main-tx-encriptar, 
-.main-textarea-resultado  {
+.main-tx-resultado  {
 
   display: flex;
   resize: none;
@@ -98,8 +99,8 @@ textarea::placeholder {
   opacity: .6;
 }
 
-.main-textarea-resultado::placeholder {
-  color: #000000;
+.main-tx-resultado::placeholder {
+  color: var(--color-texto);
   font-size: 3rem;
   padding: 25px 20px;
   }
