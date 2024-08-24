@@ -188,6 +188,10 @@ textarea::placeholder {
     align-items: center;
   }
 
+  .title {
+    font-size: 1.8rem;
+  }
+
   .main {
     flex-direction: column;
     width: 100%;
