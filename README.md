@@ -18,11 +18,17 @@ El encriptador de texto permite transformar un mensaje en un texto encriptado y,
 2. **🔓 Desencriptar:** Convierte un texto encriptado de vuelta a su versión original.
 3. **📋 Copiar:** Permite copiar el texto encriptado/desencriptado al portapapeles para su uso posterior.
 
+## 🌐 Despliegue en Vercel
+
+El proyecto se encuentra desplegado en **Vercel** y puedes acceder a él en la siguiente URL:
+
+👉 [Encriptador de Texto - Despliegue en Vercel](https://encriptador-texto-omega.vercel.app/)
+
 ## 🛠️ Instalación y Uso
 
 1. Clona este repositorio:
     ```bash
-    git clone [https://github.com/tu-usuario/encriptador-texto.git](https://github.com/Crist0891/encriptador-texto.git)
+    git clone (https://github.com/Crist0891/encriptador-texto.git)
     ```
 
 2. Abre el archivo `index.html` en tu navegador para usar la aplicación.
